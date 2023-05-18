@@ -1,15 +1,11 @@
-<configuration>
-    <system.webServer>
-        <rewrite>
-        <rules>
-            <rule name="redirect all requests" stopProcessing="true">
-                <match url="^(.*)$" ignoreCase="false" />
-                <conditions logicalGrouping="MatchAll">
-                    <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" pattern="" ignoreCase="false" />
-                </conditions>
-                <action type="Rewrite" url="https://eu.knowbe4.com/auth/saml/3cdb11aa98f9b" appendQueryString="true" />
-            </rule>
-        </rules>
-    </rewrite>
-    </system.webServer>
-</configuration>
+<!DOCTYPE html>
+<html>
+<head>
+   <title>HTML Redirect</title>
+   <meta http-equiv="refresh" content="1; url = https://eu.knowbe4.com/auth/saml/3cdb11aa98f9b" />
+</head>
+<body>
+   <h1>Speedy KnowBe4</h1>
+   <p>you'll be redirected to KnowBe4, in 5 seconds.</p>
+</body>
+</html>
